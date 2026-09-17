@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Helena & Rafael — Convite Oficial de Casamento. 15 de Novembro de 2026, São Paulo — SP.">
+  <title>Helena & Rafael | Nosso Dia</title>
+
+  <!-- Google Fonts: Cormorant Garamond (Serif Editorial) & Plus Jakarta Sans (Sans-serif Elegante) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TELA DE ABERTURA DO CONVITE (ENVELOPE DIGITAL) -->
+  <div class="intro-overlay" id="intro-overlay">
+    <div class="intro-card">
+      <span class="intro-subtitle">CONVITE DE CASAMENTO</span>
+      <h1 class="intro-names">Helena &amp; Rafael</h1>
+      <p class="intro-quote">"Duas histórias. Um novo capítulo."</p>
+      <div class="intro-divider"></div>
+      <p class="intro-invitation">Você é nosso convidado de honra para celebrar este momento inesquecível.</p>
+      <button class="btn btn-primary btn-open-invite" id="btn-open-invite">
+        <span>Abrir Convite</span>
+        <span class="btn-icon">✨</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- NAVEGAÇÃO / HEADER -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo">H &amp; R</a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#historia" class="nav-link">Nossa História</a></li>
+          <li><a href="#o-dia" class="nav-link">O Grande Dia</a></li>
+          <li><a href="#como-chegar" class="nav-link">Como Chegar</a></li>
+          <li><a href="#galeria" class="nav-link">Galeria</a></li>
+          <li><a href="#presentes" class="nav-link">Presentes</a></li>
+          <li><a href="#recados" class="nav-link">Mensagens</a></li>
+          <li><a href="#faq" class="nav-link">Dúvidas</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#rsvp" class="btn btn-primary btn-sm">Confirmar Presença</a>
+        <button class="hamburger" id="hamburger-btn" aria-label="Abrir Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-wrapper">
+        <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1920&q=85" alt="Helena & Rafael" class="hero-bg-img" id="hero-bg-img">
+        <div class="hero-overlay-shade"></div>
+      </div>
+      
+      <div class="hero-content reveal">
+        <span class="hero-date-badge">15 . 11 . 2026</span>
+        <h1 class="hero-title">HELENA &amp; RAFAEL</h1>
+        <p class="hero-subtitle">Duas histórias. Um novo capítulo.</p>
+        <span class="hero-location">São Paulo — SP</span>
+
+        <a href="#contagem" class="scroll-indicator" aria-label="Rolar para baixo">
+          <span>Role para descobrir</span>
+          <span class="arrow-down">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTAGEM REGRESSIVA -->
+    <section class="contagem-section" id="contagem">
+      <div class="container text-center reveal">
+        <span class="section-tag">Contagem Regressiva</span>
+        <h2 class="section-title">O nosso grande dia está chegando</h2>
+        <div class="timer-divider"></div>
+
+        <div class="countdown-grid" id="countdown-grid">
+          <div class="timer-card">
+            <span class="timer-num" id="timer-days">00</span>
+            <span class="timer-label">Dias</span>
+          </div>
+          <div class="timer-card">
+            <span class="timer-num" id="timer-hours">00</span>
+            <span class="timer-label">Horas</span>
+          </div>
+          <div class="timer-card">
+            <span class="timer-num" id="timer-minutes">00</span>
+            <span class="timer-label">Minutos</span>
+          </div>
+          <div class="timer-card">
+            <span class="timer-num" id="timer-seconds">00</span>
+            <span class="timer-label">Segundos</span>
+          </div>
+        </div>
+        <div id="countdown-finished-msg" class="countdown-finished">Hoje é o grande dia! ❤️</div>
+      </div>
+    </section>
+
+    <!-- NOSSA HISTÓRIA -->
+    <section class="historia-section" id="historia">
+      <div class="container">
+        <div class="historia-header reveal">
+          <span class="section-tag">Nossa Trajetória</span>
+          <h2 class="section-title">Onde tudo começou</h2>
+          <p class="lead-text">
+            Um olhar despretensioso em uma tarde de outono transformou dois caminhos diferentes em uma só caminhada repleta de carinho, cumplicidade e sonhos compartilhados.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-media">
+              <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=80" alt="Primeiro Encontro">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-year">2019</span>
+              <h3>O Primeiro Encontro</h3>
+              <p>Um café em uma tarde de chuva em São Paulo que durou horas. Ali percebemos que nossas risadas tinham o mesmo tom e nossos valores a mesma direção.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item reveal delay-1">
+            <div class="timeline-media">
+              <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80" alt="O Pedido de Casamento">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-year">2022</span>
+              <h3>O Pedido</h3>
+              <p>Sob o pôr do sol das montanhas, entre olhares marejados e o coração acelerado, o "Sim" mais importante das nossas vidas foi dito com toda a certeza do mundo.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-media">
+              <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Planejando o Casamento">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-year">2025</span>
+              <h3>O Planejamento</h3>
+              <p>Começamos a desenhar cada detalhe do nosso grande dia, imaginando a alegria de reunir as pessoas que mais amamos em um só lugar.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item reveal delay-1">
+            <div class="timeline-media">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Celebração">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-year">2026</span>
+              <h3>A Celebração</h3>
+              <p>Agora falta muito pouco para darmos este passo decisivo. Mal podemos esperar para celebrar essa união ao seu lado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O GRANDE DIA (CERIMÔNIA & RECEPÇÃO) -->
+    <section class="o-dia-section" id="o-dia">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag">Programação</span>
+          <h2 class="section-title">O Grande Dia</h2>
+          <p class="subtitle-text">15 de Novembro de 2026 — São Paulo, SP</p>
+        </div>
+
+        <div class="venues-grid">
+          <!-- Cerimônia -->
+          <div class="venue-card reveal">
+            <div class="venue-image">
+              <img src="https://images.unsplash.com/photo-1545232979-fbfd430c5e63?auto=format&fit=crop&w=800&q=80" alt="Igreja Nossa Senhora do Brasil">
+              <span class="venue-badge">Cerimônia</span>
+            </div>
+            <div class="venue-details">
+              <span class="venue-time">16:00 H</span>
+              <h3>Igreja Nossa Senhora do Brasil</h3>
+              <p class="venue-address">Praça Nossa Sra. do Brasil — Jardim América, São Paulo - SP</p>
+              <div class="venue-actions">
+                <button onclick="openGoogleMaps('ceremonia')" class="btn btn-secondary btn-sm">Google Maps</button>
+                <button onclick="openWaze('ceremonia')" class="btn btn-secondary btn-sm">Waze</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recepção -->
+          <div class="venue-card reveal delay-1">
+            <div class="venue-image">
+              <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Espaço Jardim Paulista">
+              <span class="venue-badge">Recepção & Festa</span>
+            </div>
+            <div class="venue-details">
+              <span class="venue-time">18:30 H</span>
+              <h3>Espaço Jardim Paulista</h3>
+              <p class="venue-address">Av. Rebouças, 1200 — Jardins, São Paulo - SP</p>
+              <div class="venue-actions">
+                <button onclick="openGoogleMaps('recepcao')" class="btn btn-secondary btn-sm">Google Maps</button>
+                <button onclick="openWaze('recepcao')" class="btn btn-secondary btn-sm">Waze</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO CHEGAR (ROTA VISUAL) -->
+    <section class="como-chegar-section" id="como-chegar">
+      <div class="container">
+        <div class="route-box reveal">
+          <span class="section-tag">Trajeto</span>
+          <h2 class="section-title">Do "Sim" à Celebração</h2>
+          <p class="route-desc">Os locais são próximos para facilitar o deslocamento dos convidados. Confira a conexão entre os dois pontos:</p>
+
+          <div class="route-connector">
+            <div class="route-step">
+              <span class="route-icon">⛪</span>
+              <strong>CERIMÔNIA</strong>
+              <span>16:00</span>
+            </div>
+            <div class="route-line">
+              <span class="line-dot"></span>
+              <span class="route-dist">15 min de carro</span>
+            </div>
+            <div class="route-step">
+              <span class="route-icon">🥂</span>
+              <strong>RECEPÇÃO</strong>
+              <span>18:30</span>
+            </div>
+          </div>
+
+          <div class="route-buttons">
+            <button onclick="openGoogleMaps('recepcao')" class="btn btn-primary btn-sm">Abrir Rota no Google Maps</button>
+            <button onclick="openWaze('recepcao')" class="btn btn-secondary btn-sm">Abrir Rota no Waze</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFIRMAÇÃO DE PRESENÇA (RSVP) -->
+    <section class="rsvp-section" id="rsvp">
+      <div class="container max-w-700">
+        <div class="rsvp-card reveal">
+          <span class="section-tag">RSVP</span>
+          <h2 class="section-title">Você estará conosco?</h2>
+          <p class="rsvp-lead">Sua presença tornará esse dia ainda mais especial e inesquecível para nós.</p>
+
+          <div class="rsvp-choice-btns">
+            <button class="btn btn-choice active" id="btn-choice-yes">SIM, ESTAREI ❤️</button>
+            <button class="btn btn-choice" id="btn-choice-no">NÃO PODEREI COMPARECER</button>
+          </div>
+
+          <!-- FORMULÁRIO DE CONFIRMAÇÃO (SIM) -->
+          <form id="rsvp-form" class="rsvp-form">
+            <div class="form-group">
+              <label for="rsvp-name">Nome Completo *</label>
+              <input type="text" id="rsvp-name" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div class="form-group">
+              <label for="rsvp-phone">WhatsApp / Telefone *</label>
+              <input type="tel" id="rsvp-phone" placeholder="(11) 99999-9999" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="rsvp-guests">Total de Convidados *</label>
+                <select id="rsvp-guests" required>
+                  <option value="1">Apenas eu (1)</option>
+                  <option value="2">2 pessoas</option>
+                  <option value="3">3 pessoas</option>
+                  <option value="4">4 pessoas</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="rsvp-diet">Restrição Alimentar?</label>
+                <input type="text" id="rsvp-diet" placeholder="Ex: Vegano, Intolerante à lactose">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Confirmar Presença no WhatsApp ✨
+            </button>
+          </form>
+
+          <!-- MENSAGEM CASO NÃO POSSA COMPARECER -->
+          <div id="rsvp-decline-box" class="rsvp-decline-box">
+            <p>Sentiremos sua falta nesse dia tão importante! Se desejar, deixe uma mensagem especial para os noivos abaixo.</p>
+            <a href="#recados" class="btn btn-secondary btn-sm">Deixar uma mensagem</a>
+          </div>
+
+          <!-- FEEDBACK DE SUCESSO -->
+          <div id="rsvp-success-msg" class="rsvp-success-msg">
+            <h3>Que alegria ter você conosco! ❤️</h3>
+            <p>Sua confirmação foi enviada com sucesso para o nosso WhatsApp. Nos vemos no dia 15/11/2026!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA DE FOTOS EDITORIAL -->
+    <section class="galeria-section" id="galeria">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Memórias</span>
+          <h2 class="section-title">Alguns momentos da nossa história</h2>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <div class="gallery-item large reveal" data-index="0">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80" alt="Momentos Helena e Rafael 1">
+            <div class="gallery-hover"><span>Ampliar</span></div>
+          </div>
+          <div class="gallery-item reveal delay-1" data-index="1">
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Momentos Helena e Rafael 2">
+            <div class="gallery-hover"><span>Ampliar</span></div>
+          </div>
+          <div class="gallery-item reveal" data-index="2">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" alt="Momentos Helena e Rafael 3">
+            <div class="gallery-hover"><span>Ampliar</span></div>
+          </div>
+          <div class="gallery-item reveal delay-1" data-index="3">
+            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=80" alt="Momentos Helena e Rafael 4">
+            <div class="gallery-hover"><span>Ampliar</span></div>
+          </div>
+          <div class="gallery-item tall reveal" data-index="4">
+            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80" alt="Momentos Helena e Rafael 5">
+            <div class="gallery-hover"><span>Ampliar</span></div>
+          </div>
+          <div class="gallery-item reveal delay-1" data-index="5">
+            <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=800&q=80" alt="Momentos Helena e Rafael 6">
+            <div class="gallery-hover"><span>Ampliar</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTA DE PRESENTES -->
+    <section class="presentes-section" id="presentes">
+      <div class="container text-center reveal">
+        <span class="section-tag">Carinho</span>
+        <h2 class="section-title">Se quiser nos presentear...</h2>
+        <p class="presentes-lead">
+          O maior presente é ter você conosco nesse dia especial. Mas, se desejar nos presentear de outra forma, preparamos algumas opções simbólicas com muito carinho.
+        </p>
+        <button class="btn btn-primary" id="btn-open-gifts">Ver Lista de Presentes 🎁</button>
+      </div>
+    </section>
+
+    <!-- DRESS CODE -->
+    <section class="dresscode-section">
+      <div class="container">
+        <div class="dresscode-card reveal">
+          <div class="dresscode-content">
+            <span class="section-tag">Vestuário</span>
+            <h2 class="section-title">Como se vestir</h2>
+            <span class="traje-badge">Traje: Esporte Fino / Passeio Completo</span>
+            <p>
+              Queremos que você se sinta elegante, leve e extremamente confortável para dançar e celebrar esse momento inesquecível conosco.
+            </p>
+            <div class="dresscode-tips">
+              <div>
+                <strong>Para Elas:</strong>
+                <p>Vestidos fluidos, midi ou longos em tons suaves, pastéis ou florais elegantes.</p>
+              </div>
+              <div>
+                <strong>Para Eles:</strong>
+                <p>Traje social ou blazer com camisa e calça alfaiataria (gravata opcional).</p>
+              </div>
+            </div>
+          </div>
+          <div class="dresscode-media">
+            <img src="https://images.unsplash.com/photo-1509924940645-05d263d30027?auto=format&fit=crop&w=800&q=80" alt="Referências de Traje">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAYER DE MÚSICA DO CASAL -->
+    <section class="musica-section">
+      <div class="container max-w-700 reveal">
+        <div class="music-player-card">
+          <span class="section-tag">Trilha Sonora</span>
+          <h2 class="section-title">Uma música que faz parte da nossa história</h2>
+          <p class="music-track-name">"La Vie En Rose" — Instrumental</p>
+
+          <div class="custom-audio-player">
+            <button class="btn-play-pause" id="btn-play-music" aria-label="Tocar Música">
+              <span id="music-icon">▶</span>
+            </button>
+            <div class="music-progress-wrap">
+              <div class="music-progress-bar" id="music-progress-bar"></div>
+            </div>
+            <span class="music-time" id="music-time">0:00</span>
+          </div>
+          <!-- Elemento de áudio configurável -->
+          <audio id="couple-audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="metadata"></audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENSAGENS AOS NOIVOS (GUESTBOOK LOCALSTORAGE) -->
+    <section class="recados-section" id="recados">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag">Livro de Visitas</span>
+          <h2 class="section-title">Deixe uma mensagem para nós</h2>
+          <p class="subtitle-text">Escreva seu carinho para guardar em nossas memórias.</p>
+        </div>
+
+        <div class="guestbook-grid">
+          <!-- Formulário -->
+          <div class="guestbook-form-card reveal">
+            <form id="guestbook-form">
+              <div class="form-group">
+                <label for="gb-name">Seu Nome *</label>
+                <input type="text" id="gb-name" placeholder="Como deseja ser identificado?" required>
+              </div>
+              <div class="form-group">
+                <label for="gb-message">Sua Mensagem *</label>
+                <textarea id="gb-message" rows="5" placeholder="Escreva aqui seu recado de carinho..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Enviar Carinho ❤️</button>
+            </form>
+          </div>
+
+          <!-- Mensagens Exibidas -->
+          <div class="guestbook-feed reveal delay-1" id="guestbook-feed">
+            <!-- Mensagens são renderizadas via JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFORMAÇÕES IMPORTANTES / FAQ -->
+    <section class="faq-section" id="faq">
+      <div class="container max-w-700">
+        <div class="section-header center reveal">
+          <span class="section-tag">Antes de ir</span>
+          <h2 class="section-title">Dúvidas Frequentes</h2>
+        </div>
+
+        <div class="accordion" id="faq-accordion">
+          <div class="accordion-item reveal">
+            <button class="accordion-header">
+              <span>Posso levar acompanhante?</span>
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>Os convites são individuais e nominais para garantir a acomodação confortável de todos. Por favor, confirme apenas o número de pessoas indicado no seu convite.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item reveal">
+            <button class="accordion-header">
+              <span>Qual é o traje sugerido?</span>
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>Sugerimos o traje Esporte Fino / Passeio Completo. O mais importante é que você se sinta elegante e confortável para festejar conosco.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item reveal">
+            <button class="accordion-header">
+              <span>Haverá estacionamento no local?</span>
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>Sim! Ambos os locais (Cerimônia e Recepção) contam com serviço de valet com manobrista no local para sua comodidade.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item reveal">
+            <button class="accordion-header">
+              <span>Até quando posso confirmar presença?</span>
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>Pedimos a gentileza de confirmar sua presença até o dia 15 de Outubro de 2026 para que possamos organizar todos os detalhes com os fornecedores.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL EMOCIONAL -->
+    <section class="cta-final-section">
+      <div class="container text-center reveal">
+        <h2 class="cta-title">Mal podemos esperar para viver esse dia com vocês.</h2>
+        <span class="cta-names">Helena &amp; Rafael</span>
+        <span class="cta-date">15 . 11 . 2026</span>
+        <div style="margin-top: 2.5rem;">
+          <a href="#rsvp" class="btn btn-primary">Confirmar presença ❤️</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container text-center">
+      <h3 class="footer-names">HELENA &amp; RAFAEL</h3>
+      <span class="footer-tag">NOSSO DIA — 15.11.2026</span>
+      <p class="footer-copy">Feito com carinho para celebrar uma linda história de amor.</p>
+      
+      <!-- Crédito discreto do estúdio -->
+      <div class="devruby-credit">
+        Projeto desenvolvido por <a href="https://github.com" target="_blank" rel="noopener">DevRuby Digital Lab</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+  <!-- MODAL DE LIGHTBOX (GALERIA DE FOTOS) -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Fechar">&times;</button>
+    <button class="lightbox-arrow prev" id="lightbox-prev" aria-label="Anterior">❮</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Foto Ampliada">
+    </div>
+    <button class="lightbox-arrow next" id="lightbox-next" aria-label="Próxima">❯</button>
+  </div>
+
+  <!-- MODAL DE LISTA DE PRESENTES -->
+  <div class="gift-modal" id="gift-modal" aria-hidden="true">
+    <div class="gift-modal-dialog">
+      <button class="gift-modal-close" id="gift-modal-close" aria-label="Fechar Modal">&times;</button>
+      <div class="gift-modal-header text-center">
+        <span class="section-tag">Lista de Presentes</span>
+        <h2>Sugestões Carinhosas</h2>
+        <p>Sua contribuição nos ajudará a construir nosso novo lar e nossa lua de mel.</p>
+      </div>
+
+      <div class="gift-items-grid">
+        <div class="gift-card">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Lua de mel">
+          <div class="gift-info">
+            <h3>Passeio de Barco na Lua de Mel</h3>
+            <p>Contribuição simbólica para um dia inesquecível de mar.</p>
+            <a href="https://pix.bcb.gov.br" target="_blank" class="btn btn-secondary btn-sm btn-block">Presentear via PIX</a>
+          </div>
+        </div>
+
+        <div class="gift-card">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt="Jantar Romântico">
+          <div class="gift-info">
+            <h3>Jantar Romântico a Dois</h3>
+            <p>Um brinde especial em nossa primeira viagem como casados.</p>
+            <a href="https://pix.bcb.gov.br" target="_blank" class="btn btn-secondary btn-sm btn-block">Presentear via PIX</a>
+          </div>
+        </div>
+
+        <div class="gift-card">
+          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=400&q=80" alt="Cafeteira Espresso">
+          <div class="gift-info">
+            <h3>Cafeteira Espresso para a Casa</h3>
+            <p>Para começarmos nossas manhãs com aroma de café fresco.</p>
+            <a href="https://pix.bcb.gov.br" target="_blank" class="btn btn-secondary btn-sm btn-block">Presentear via PIX</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
